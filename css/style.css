@@ -33,7 +33,7 @@ nav a{
   text-decoration: none; 
 }
 
-nav a:hover{
+nav a:hover, nav a:focus{
   text-decoration: underline;
 }
 
@@ -48,11 +48,15 @@ links in the navigation are in the hover or focus state.*/
   padding: 6px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
-  z-index: 0;
-
+  z-index: 1;
+  position:absolute;
+  top: -40px;
   /*Your code here*/
 }
 
+.skip a:focus{
+  top: 0px;
+}
 
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
